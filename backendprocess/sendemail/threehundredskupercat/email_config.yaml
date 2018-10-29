@@ -1,0 +1,10 @@
+title: Matched SKUs Amoung top 300 Sales Order Item During Last 30 Days
+body: <a href="http://192.168.100.160:8089/?orgId=1"> The LINK </a>
+attachPath: MatchedSkusPerCat.csv
+recipient: mohammadhadi.mojahedi@bamilo.com
+senderIdentity: automation@bamilo.com
+senderEmail: automation@bamilo.com
+senderName: Bamilo Automation
+senderPw: bXJxM3YxaDMwazAw
+smtpAddr: mail.smtp2go.com
+smtpPort: 2525
