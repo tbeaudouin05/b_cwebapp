@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+<title>User registration</title>
+<style>
+
+          table tr:nth-child(even) {
+  background-color: #eee;
+  }
+  tr:nth-child(odd) {
+    background-color: #fff;
+  }  
+    table, th, td {
+        border: 1px solid black;
+        border-collapse: collapse;
+    }
+    th, td {
+        padding: 5px;
+    }
+    th, td {
+        text-align: center;
+    }
+        input[type=text], input[type=number], select {
+            width: 100%;
+            padding: 10px 15px;
+            margin: 5px 0;
+            display: inline;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        
+        button[type=submit] {
+            width: 100%;
+            background-color: #4CAF50;
+            color: white;
+            padding: 14px 20px;
+            margin: 8px 0;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        
+        button[type=submit]:hover {
+            background-color: #45a049;
+        }
+        
+        div {
+            border-radius: 3px;
+            background-color: #f2f2f2;
+            padding: 10px;
+        }
+
+                .container {
+        border-radius: 5px;
+        background-color: #f2f2f2;
+        padding: 20px;
+        }
+
+        .col_access {
+            float: left;
+            width: 30%;
+            margin-top: 6px;
+        }
+
+        .col_location_access {
+            float: left;
+            width: 30%;
+            margin-top: 6px;
+        }
+
+        .col_department_access {
+            float: left;
+            width: 30%;
+            margin-top: 6px;
+        }
+
+        </style>
+
+<style type="text/css">.error {color: red;}</style>
+
+</head>
+
+<ul>
+    <li style="display:inline-block;">
+       <p><a href="../">Home</a></p> 
+    </li>
+</ul>
+
+    <h1>Register new user</h1>
+    <div>
+        <p class="error" >{{ .Error }}</p>
+    </div>
+
+    <form action="/adduser" id="adduser" method="post">
+
+        Email:<input type="text" name="Email" value="{{ .Email }}" required>
+        Name:<input type="text" name="Name" value="{{ .Name }}" required>
+        
+        <button type="submit"> Submit </button>
+    </form>
+
+
+</body>
